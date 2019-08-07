@@ -1,0 +1,11 @@
+= form_with(model: @task) do |f|
+  .new_task
+  = f.label :タスク名
+  .new_task_field
+  = f.text_field :task
+  .new_limit
+  = f.label :期限
+  .new_limit_field
+  = f.text_field :limit_date
+  .new_submit
+  = f.submit
