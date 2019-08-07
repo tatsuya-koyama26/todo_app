@@ -4,10 +4,16 @@ class TasksController < ApplicationController
     @status = ['todo', 'doing', 'done']
   end
 
+  def new
+    @task = Task.new
+  end
+
   def show
   end
 
-  def store
+  def create
+    @task = Task.create(task_params)
+    redirect_to tasks_path
   end
 
   def update
@@ -15,4 +21,9 @@ class TasksController < ApplicationController
 
   def destroy
   end
+
+  private
+    def task_params
+      params.require(:task).permit(:task)
+    end
 end

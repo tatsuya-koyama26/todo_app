@@ -1,0 +1,10 @@
+%h1 新規タスク
+= form_for(@task) do |f|
+  .new_task
+  = f.label :タスク名
+  .new_text_field
+  = f.text_field :task
+  .new_submit
+  = f.submit
+
+= link_to '戻る', root_path
