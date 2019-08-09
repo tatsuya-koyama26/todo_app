@@ -1,23 +1,34 @@
-%h1.title TASK LIST
-%table
-  %thead
-    %tr
-      %th
-        STATE
-      %th
-        タスク名
-      %th
-        期限
-  %tbody
-    - @tasks.each do |task|
+.inner
+  %h1.title TASK LIST
+  = link_to 'create new task', new_task_path, {class: 'create-task__button'}
+  %table.create-task__table
+    %thead
       %tr
-        %td
-          = task.state
-        %td
-          = task.task
-        %td
-          = task.limit_date
-        %td
-          = link_to '編集', edit_task_path(task)
-          = link_to '削除', task_path(task), method: :delete
-= link_to '追加', new_task_path
+        %th
+          STATE
+        %th
+          タスク名
+        %th
+          期限
+        %th
+          編集
+        %th
+          削除
+        %th
+          更新日
+
+    %tbody
+      - @tasks.each do |task|
+        %tr
+          %td
+            = task.state
+          %td
+            = task.task
+          %td
+            = task.limit_date
+          %td
+            = link_to image_tag("edit.svg", size:'30'), edit_task_path(task)
+          %td
+            = link_to image_tag("delete.svg", size:'30'), task_path(task), method: :delete
+          %td
+            = task.updated_at.strftime("%Y-%m-%d %H:%M")

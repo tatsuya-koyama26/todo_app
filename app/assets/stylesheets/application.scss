@@ -13,3 +13,13 @@
  *= require_tree .
  *= require_self
  */
+body {
+  background-image: url("pexels-photo-351961");
+  background-size: cover;
+  background-attachment: fixed;
+}
+.inner {
+  width: 800px;
+  margin: 0 auto;
+  padding: 8px 0 0;
+}

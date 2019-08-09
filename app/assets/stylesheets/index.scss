@@ -1,0 +1,38 @@
+.title {
+  color: #fff;
+  border-bottom: 1.5px solid #dad7d7;
+}
+.create-task__button {
+  width: 40%;
+  margin: 30px auto;
+  display: block;
+  height: 56px;
+  background: #79ea2d;
+  line-height: 56px;
+  text-align: center;
+  font-weight: 600;
+  transition: all ease-out .3s;
+  color: #fff;
+  text-decoration: none
+}
+.create-task__table {
+  margin: 50px auto;
+  width: 100%;
+  border-collapse: collapse;
+  border: 1.5px solid #dad7d7;
+  background-color: rgba($color: white, $alpha: 0.9);
+  th {
+    border-collapse: collapse;
+    border: 1.5px solid #dad7d7;
+    padding: 16px 8px;
+  }
+  td {
+    border-collapse: collapse;
+    border: 1.5px solid #dad7d7;
+    padding: 16px 8px;
+    text-align: center;
+    select {
+      padding: 20px;
+    }
+  }
+}
