@@ -1,8 +1,7 @@
 .inner
   %h1.title TASK LIST
-  .create-task__button
-    = link_to 'create new task', new_task_path
-  %table
+  = link_to 'create new task', new_task_path, {class: 'create-task__button'}
+  %table.create-task__table
     %thead
       %tr
         %th
@@ -11,6 +10,11 @@
           タスク名
         %th
           期限
+        %th
+          編集 削除
+        %th
+          更新日
+
     %tbody
       - @tasks.each do |task|
         %tr
@@ -23,3 +27,5 @@
           %td
             = link_to '編集', edit_task_path(task)
             = link_to '削除', task_path(task), method: :delete
+          %td
+            = task.updated_at.strftime("%Y-%m-%d %H:%M")

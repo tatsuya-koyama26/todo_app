@@ -8,8 +8,23 @@
   text-align: center;
   font-weight: 600;
   transition: all ease-out .3s;
-  a {
-    color: #fff;
-    text-decoration: none
+  color: #fff;
+  text-decoration: none
+}
+.create-task__table {
+  margin: 50px auto;
+  width: 100%;
+  border-collapse: collapse;
+  border: 1.5px solid #dad7d7;
+  th {
+    border-collapse: collapse;
+    border: 1.5px solid #dad7d7;
+    padding: 16px 8px;
+  }
+  td {
+    border-collapse: collapse;
+    border: 1.5px solid #dad7d7;
+    padding: 16px 8px;
+    text-align: center;
   }
 }
