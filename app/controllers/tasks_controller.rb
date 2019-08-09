@@ -1,6 +1,6 @@
 class TasksController < ApplicationController
   def index
-    @tasks  = Task.order('created_at DESC').all
+    @tasks  = Task.order('limit_date').all
     @status = ['todo', 'doing', 'done']
   end
 
@@ -34,6 +34,6 @@ class TasksController < ApplicationController
 
   private
     def task_params
-      params.require(:task).permit(:task, :limit_date)
+      params.require(:task).permit(:state, :task, :limit_date)
     end
 end

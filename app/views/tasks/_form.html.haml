@@ -1,4 +1,8 @@
 = form_with(model: @task) do |f|
+  .new_state
+  = f.label :STATE
+  .new_state_field
+  = f.select :state, ['todo', 'doing', 'done']
   .new_task
   = f.label :タスク名
   .new_task_field
