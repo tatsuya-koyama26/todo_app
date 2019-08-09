@@ -1,0 +1,15 @@
+.create-task__button {
+  width: 40%;
+  margin: 30px auto;
+  display: block;
+  height: 56px;
+  background: #79ea2d;
+  line-height: 56px;
+  text-align: center;
+  font-weight: 600;
+  transition: all ease-out .3s;
+  a {
+    color: #fff;
+    text-decoration: none
+  }
+}
