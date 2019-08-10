@@ -1,8 +1,11 @@
 .title {
   color: #fff;
   border-bottom: 1.5px solid #dad7d7;
+  font-family: serif;
 }
 .create-task__button {
+  font-size: x-large;
+  font-family: serif;
   width: 40%;
   margin: 30px auto;
   display: block;
@@ -16,6 +19,7 @@
   text-decoration: none
 }
 .create-task__table {
+  font-family: serif;
   margin: 50px auto;
   width: 100%;
   border-collapse: collapse;
