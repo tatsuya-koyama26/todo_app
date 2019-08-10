@@ -4,6 +4,11 @@
   font-family: serif;
 }
 .create-task__button {
+  transition    : .3s;
+  box-shadow    : 6px 6px 3px #666666;
+  border        : 2px solid #79ea2d; 
+  cursor        : pointer;
+  border-radius : 5%;
   font-size: x-large;
   font-family: serif;
   width: 40%;
