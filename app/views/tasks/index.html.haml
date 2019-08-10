@@ -1,6 +1,8 @@
+#page_top
+  = link_to 'TOP',"", id: "page_top"
 .inner
   %h1.title TASK LIST
-  = link_to 'create new task', new_task_path, {class: 'create-task__button'}
+  = link_to 'Create New Task', new_task_path, {class: 'create-task__button'}
   %table.create-task__table
     %thead
       %tr
@@ -14,8 +16,8 @@
           編集
         %th
           削除
-        %th
-          更新日
+        -# %th
+        -#   更新日
 
     %tbody
       - @tasks.each do |task|
@@ -30,5 +32,5 @@
             = link_to image_tag("edit.svg", size:'30'), edit_task_path(task)
           %td
             = link_to image_tag("delete.svg", size:'30'), task_path(task), method: :delete
-          %td
-            = task.updated_at.strftime("%Y-%m-%d %H:%M")
+          -# %td
+          -#   = task.updated_at.strftime("%Y-%m-%d %H:%M")

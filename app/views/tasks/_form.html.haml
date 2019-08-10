@@ -1,15 +1,16 @@
 = form_with(model: @task) do |f|
-  .new_state
-  = f.label :STATE
-  .new_state_field
-  = f.select :state, ['todo', 'doing', 'done']
-  .new_task
-  = f.label :タスク名
-  .new_task_field
-  = f.text_field :task
-  .new_limit
-  = f.label :期限
-  .new_limit_field
-  = f.text_field :limit_date
+  .new_state.sub-title
+    = f.label :STATE
+  .new_state_field.input-default
+    = f.select :state, ['todo', 'doing', 'done']
+  .new_task.sub-title
+    = f.label :TASK
+  .new_task_field.input-default
+    = f.text_field :task, placeholder: "例） 10時まで勉強する"
+  .new_limit.sub-title
+    = f.label :Limit
+  .new_limit_field.input-default
+    = f.text_field :limit_date, placeholder: "例） 2020/01/01"
   .new_submit
-  = f.submit
+    = f.submit
+    = link_to 'BACK', root_path, class: "btn-sticky"
