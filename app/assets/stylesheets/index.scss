@@ -50,3 +50,33 @@
     }
   }
 }
+#page_top{
+  width: 100px;
+  height: 60px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: #383637;
+  border-radius: 15px;
+  transition    : .3s;
+  box-shadow    : 6px 6px 3px #666666;
+  border        : 2px solid white; 
+  cursor        : pointer;
+  border-radius : 5%;
+  font-size: x-large;
+  font-family: serif;
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-weight: 600;
+  transition: all ease-out .3s;
+  color: #fff;
+  text-decoration: none
+}
+#page_top:hover {
+  box-shadow    : none;
+  color         : black;
+  background    : #ffffff;
+  border        : 2px solid black;
+}
