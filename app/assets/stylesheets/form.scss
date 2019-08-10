@@ -22,6 +22,7 @@
   margin: 20px 0 20px 40px;
 }
 .new_submit input {
+  font-weight: 600;
   width: 40%;
   display       : block;
   border-radius : 5%;
@@ -30,12 +31,17 @@
   cursor        : pointer;
   padding       : 12px 12px;
   margin: 30px auto;
-  background    : #79ea2d;
+  background    : #5dd3f7;
   color         : #ffffff;
   line-height   : 1em;
   transition    : .3s;
   box-shadow    : 6px 6px 3px #666666;
-  border        : 2px solid #79ea2d; 
+  border        : 2px solid #5dc6f7; 
   font-size: x-large;
   font-family: serif;
+}
+.new_submit input:hover {
+  box-shadow    : none;
+  color         : #000066;
+  background    : #ffffff;
 }

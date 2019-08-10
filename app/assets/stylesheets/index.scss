@@ -14,14 +14,19 @@
   width: 40%;
   margin: 30px auto;
   display: block;
-  height: 56px;
+  height: 50px;
   background: #79ea2d;
-  line-height: 56px;
+  line-height: 50px;
   text-align: center;
   font-weight: 600;
   transition: all ease-out .3s;
   color: #fff;
   text-decoration: none
+}
+.create-task__button:hover {
+  box-shadow    : none;
+  color         : #000066;
+  background    : #ffffff;
 }
 .create-task__table {
   font-family: serif;
