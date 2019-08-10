@@ -10,6 +10,12 @@
   display: block;
   margin: 20px auto 20px;
 }
+.sub-title {
+  font-size: large;
+  font-family: serif;
+  font-weight: bold;
+  margin: 0 20px;
+}
 #task_state {
   height: 49px;
   padding: 10px 16px 8px;
@@ -21,22 +27,25 @@
   width: 25%;
   margin: 20px 0 20px 40px;
 }
+.new_submit {
+  display: flex;
+}
 .new_submit input {
   font-weight: 600;
-  width: 40%;
+  width: 60%;
   display       : block;
   border-radius : 5%;
   font-size     : 15pt;
   text-align    : center;
   cursor        : pointer;
   padding       : 12px 12px;
-  margin: 30px auto;
-  background    : #5dd3f7;
+  margin: 25px 100px 25px 50px;
+  background    : #f78e5d;
   color         : #ffffff;
   line-height   : 1em;
   transition    : .3s;
   box-shadow    : 6px 6px 3px #666666;
-  border        : 2px solid #5dc6f7; 
+  border        : 2px solid #f78e5d; 
   font-size: x-large;
   font-family: serif;
 }
@@ -44,4 +53,30 @@
   box-shadow    : none;
   color         : #000066;
   background    : #ffffff;
+}
+.btn-sticky {
+  font-weight: 600;
+  width: 10%;
+  display       : block;
+  border-radius : 5%;
+  font-size     : 15pt;
+  text-align    : center;
+  cursor        : pointer;
+  padding       : 12px 12px;
+  margin: 25px 25px;
+  background    : #3e4041;
+  color         : #ffffff;
+  line-height   : 1em;
+  transition    : .3s;
+  box-shadow    : 6px 6px 3px #666666;
+  border        : 2px solid #ffffff; 
+  font-size: x-large;
+  font-family: serif;
+  text-decoration: none;
+}
+.btn-sticky:hover {
+  box-shadow    : none;
+  color         : #000066;
+  background    : #ffffff;
+  border        : 2px solid black;
 }
